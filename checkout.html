@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout - Velvet Vogue</title>
+    <link rel="stylesheet" href="checkout.css" />
+  </head>
+  <body>
+    <?php include 'header.php'; ?>
+    <?php include 'login_modal.html'; ?>
+    <?php include 'register_modal.html'; ?>
+
+    <main>
+      <section class="checkout-container">
+        <div class="checkout-header">
+          <h2>Checkout</h2>
+          <p>Your order details</p>
+        </div>
+
+        <div class="product-details" id="productDetails">
+          <!-- Product is dynamically loaded here -->
+        </div>
+
+        <div class="checkout-form">
+          <h3>Shipping Information</h3>
+          <form id="checkoutForm">
+            <label for="shippingName">Full Name</label>
+            <input
+              type="text"
+              id="shippingName"
+              name="shippingName"
+              placeholder="Your full name"
+              required
+            />
+
+            <label for="shippingAddress">Address</label>
+            <input
+              type="text"
+              id="shippingAddress"
+              name="shippingAddress"
+              placeholder="Your shipping address"
+              required
+            />
+
+            <label for="shippingCity">City</label>
+            <input
+              type="text"
+              id="shippingCity"
+              name="shippingCity"
+              placeholder="City"
+              required
+            />
+
+            <label for="shippingPhone">Phone Number</label>
+            <input
+              type="text"
+              id="shippingPhone"
+              name="shippingPhone"
+              placeholder="Your phone number"
+              required
+            />
+
+            <button type="submit">Proceed to Payment</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <?php include 'footer.php'; ?>
+
+    <script src="script.js"></script>
+  </body>
+</html>
